@@ -7,12 +7,14 @@
         <header>
             <h1><a href="/">Pirajesh's blog</a></h1>
         </header>
-    
+        
+        {% for post in posts %}
         <article>
-             <time> published : 16.01.2023, 18:22</time>
-             <h2><a href="">My first epic post</a></h2>
-             <p>والدتك</p>
+             <time> published : {{post.published_date}}</time>
+             <h2><a href="">{{post.title}}</a></h2>
+             <p>{{post.text|linebreaksbr}}</p>
         </article>
+        {% endfor %}
     
     
         <article>
