@@ -9,19 +9,13 @@
         </header>
         
         {% for post in posts %}
-        <article>
-             <time> published : {{post.published_date}}</time>
-             <h2><a href="">{{post.title}}</a></h2>
-             <p>{{post.text|linebreaksbr}}</p>
-        </article>
+           <article>
+                <time> published : {{ post.published_date }}</time>
+                <h2><a href="">{{ post.title }}</a></h2>
+                <p>{{ post.text|linebreaksbr }}</p>
+           </article>
         {% endfor %}
     
-    
-        <article>
-             <time> published : 16.01.2023, 18:23</time>
-             <h2><a href=""> My second epic post</a></h2>
-             <p>والدتك الجزء 2</p>
-        </article>
     
    
     </body>
